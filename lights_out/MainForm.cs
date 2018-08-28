@@ -13,9 +13,8 @@ namespace lights_out
     public partial class MainForm : Form
     {
         private const int GridOffset = 25;
-        private const int GridLength = 200;
+        private int GridLength = 200;
         private const int NumCells = 3;
-        private const int CellLength = GridLength / NumCells;
 
         private bool[,] grid;
         private Random rand;
@@ -58,6 +57,9 @@ namespace lights_out
         {
             Graphics g = e.Graphics;
 
+
+            int CellLength = GridLength / NumCells;
+
             for (int r = 0; r < NumCells; r++)
             {
                 for (int c = 0; c < NumCells; c++)
@@ -87,6 +89,9 @@ namespace lights_out
 
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
+
+            int CellLength = GridLength / NumCells;
+
             if (e.X < GridOffset || e.X > CellLength * NumCells + GridOffset ||
                 e.Y < GridOffset || e.Y > CellLength * NumCells + GridOffset)
                 return;
@@ -137,6 +142,13 @@ namespace lights_out
         private void MainForm_Load(object sender, EventArgs e)
         {
             //code
+        }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            GridLength = Math.Min(this.Width - (GridOffset * 2) - 10,
+                   this.Height - (GridOffset * 2) - 65);
+            this.Invalidate();
         }
     }
 }

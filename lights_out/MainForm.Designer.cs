@@ -108,6 +108,7 @@
             // 
             // newGameButton
             // 
+            this.newGameButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.newGameButton.Location = new System.Drawing.Point(38, 291);
             this.newGameButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.newGameButton.Name = "newGameButton";
@@ -119,6 +120,7 @@
             // 
             // exitButton
             // 
+            this.exitButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.exitButton.Location = new System.Drawing.Point(198, 291);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(100, 23);
@@ -135,7 +137,6 @@
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.newGameButton);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -146,6 +147,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
