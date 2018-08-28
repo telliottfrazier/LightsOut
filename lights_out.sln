@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lights_out", "lights_out\lights_out.csproj", "{075C4190-8610-49E3-A8B5-E98BC386530F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{075C4190-8610-49E3-A8B5-E98BC386530F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075C4190-8610-49E3-A8B5-E98BC386530F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075C4190-8610-49E3-A8B5-E98BC386530F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075C4190-8610-49E3-A8B5-E98BC386530F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2AE25E2-D83C-4414-8440-A72E92B51A02}
+	EndGlobalSection
+EndGlobal
