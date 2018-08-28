@@ -133,5 +133,10 @@ namespace lights_out
             AboutForm aboutBox = new AboutForm();
             aboutBox.ShowDialog(this);
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            //code
+        }
     }
 }
